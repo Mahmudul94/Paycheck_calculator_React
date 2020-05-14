@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Container from "@material-ui/core/Container";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
+import { NativeSelect } from "@material-ui/core";
 import Select from "@material-ui/core/Select";
 import "./header.css";
 import Box from "@material-ui/core/Box";
@@ -16,12 +17,14 @@ export default class TopShelf extends Component {
         <FormControl>
           <div>
             <b>Calculation based on:</b> <a href="./"> Tax Year</a>
-            <Select className="selectBox">
-              <MenuItem>2015</MenuItem>
-              <MenuItem>2016</MenuItem>
-              <MenuItem>2017</MenuItem>
-              <MenuItem></MenuItem>
-            </Select>
+            <NativeSelect defaultValue="" className="selectBox">
+              <option>2015</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+            </NativeSelect>
           </div>
         </FormControl>
         <FormControl>
@@ -31,7 +34,6 @@ export default class TopShelf extends Component {
               <MenuItem>New York</MenuItem>
               <MenuItem>New Jearsy</MenuItem>
               <MenuItem>Connecticuit</MenuItem>
-              <MenuItem></MenuItem>
             </Select>
           </div>
         </FormControl>
