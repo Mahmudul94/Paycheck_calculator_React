@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import Container from "@material-ui/core/Container";
-import MenuItem from "@material-ui/core/MenuItem";
-import FormControl from "@material-ui/core/FormControl";
-import { NativeSelect } from "@material-ui/core";
-import Select from "@material-ui/core/Select";
+import {
+  Box,
+  Select,
+  Container,
+  MenuItem,
+  FormControl,
+  NativeSelect,
+} from "@material-ui/core";
 import "./header.css";
-import Box from "@material-ui/core/Box";
 
 export default class TopShelf extends Component {
   render() {
