@@ -8,6 +8,7 @@ import Select from '@material-ui/core/Select';
 import { FormControlLabel } from '@material-ui/core';
 import './header.css'
 import Box from '@material-ui/core/Box'
+import TextField from '@material-ui/core/TextField';
 
 export default class TopShelf extends Component {
     render() {
@@ -41,10 +42,24 @@ export default class TopShelf extends Component {
                 </FormControl>
                 <div className="general">
                     <Box component="span" m={1} >
-
                         General Information
                 </Box>
                 </div>
+                <div className="gross">
+                    <strong>  <a href=" ">Gross Pay</a></strong>
+
+                    <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+                    <Select>
+                        <MenuItem value="">Annualy</MenuItem>
+                        <MenuItem >Pay Per Period</MenuItem>
+                    </Select>
+                </div>
+                <div >
+                    <strong>  <a href=" ">Gross Salary YTD</a></strong>
+                    <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+                    (optional)
+                </div>
+
             </div>
         )
     }
