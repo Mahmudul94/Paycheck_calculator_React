@@ -39,8 +39,9 @@ export default class TopShelf extends Component {
                         </Select></div>
                     <label><b><i>Instruction:</i></b> Click an item's name for help on contents</label>
                 </FormControl>
-                <div>
+                <div className="general">
                     <Box component="span" m={1} >
+
                         General Information
                 </Box>
                 </div>

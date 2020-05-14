@@ -1,4 +1,8 @@
-.selectBox{
-    margin-left: 10px;
-    padding-left: 20px;
+.selectBox {
+  margin-left: 10px;
+  padding-left: 20px;
+}
+.general {
+  background-color: black;
+  color: white;
 }
