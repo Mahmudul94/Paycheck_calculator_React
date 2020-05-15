@@ -16,7 +16,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 export default class TopShelf extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <Container>
                     <h3>The Paycheck Calculator</h3>
                 </Container>

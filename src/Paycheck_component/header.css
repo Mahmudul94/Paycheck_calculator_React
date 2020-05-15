@@ -1,6 +1,13 @@
 .selectBox {
   margin-left: 10px;
 }
+.App {
+  width: 600px;
+  margin: auto;
+
+  position: relative;
+  text-align: left;
+}
 .general {
   background-color: black;
   color: white;
