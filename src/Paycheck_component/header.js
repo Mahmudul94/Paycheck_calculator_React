@@ -30,14 +30,20 @@ export default class TopShelf extends Component {
     };
 
     this.onChangeGrossPay = this.onChangeGrossPay.bind(this);
+    this.onChangeGPayMethod = this.onChangeGPayMethod.bind(this);
   }
 
   onChangeGrossPay(e) {
     this.setState({
       grossPay: e.target.value,
     });
+  }
 
-    console.log(this.state.grossPay);
+  onChangeGPayMethod(e) {
+    this.setState({
+      gPayMethod: e.target.value,
+    });
+    console.log(this.state.gPayMethod);
   }
   render() {
     return (
@@ -89,9 +95,12 @@ export default class TopShelf extends Component {
               ></input>
             </div>
           </FormControl>
-          <NativeSelect className="gross_textfield">
-            <option value=""> Annualy</option>
-            <option>Pay Per Period </option>
+          <NativeSelect
+            className="gross_textfield"
+            onChange={this.onChangeGPayMethod}
+          >
+            <option value="Annualy"> Annualy</option>
+            <option value="PPP">Pay Per Period </option>
           </NativeSelect>
         </div>
         <div>
