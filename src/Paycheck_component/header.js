@@ -9,6 +9,9 @@ import { FormControlLabel } from '@material-ui/core';
 import './header.css'
 import Box from '@material-ui/core/Box'
 import TextField from '@material-ui/core/TextField';
+import Radio from '@material-ui/core/Radio';
+
+import Checkbox from '@material-ui/core/Checkbox';
 
 export default class TopShelf extends Component {
     render() {
@@ -48,7 +51,7 @@ export default class TopShelf extends Component {
                 <div className="gross">
                     <strong>  <a href=" ">Gross Pay</a></strong>
 
-                    <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+                    <TextField id="outlined-basic" label="" variant="outlined" />
                     <Select>
                         <MenuItem value="">Annualy</MenuItem>
                         <MenuItem >Pay Per Period</MenuItem>
@@ -56,9 +59,60 @@ export default class TopShelf extends Component {
                 </div>
                 <div >
                     <strong>  <a href=" ">Gross Salary YTD</a></strong>
-                    <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+                    <TextField id="outlined-basic" label="" variant="outlined" />
                     (optional)
                 </div>
+                <div>
+                    <strong>  <a href=" ">Pay Frequency</a></strong>
+                    <Select>
+                        <MenuItem value="">Daily</MenuItem>
+                        <MenuItem >Weekly</MenuItem>
+                        <MenuItem >Bi-Weekly</MenuItem>
+                        <MenuItem >Semi-Monthly</MenuItem>
+                        <MenuItem >Monthly</MenuItem>
+                        <MenuItem >Quarterly</MenuItem>
+                        <MenuItem >Semi-Annual</MenuItem>
+                        <MenuItem >Annual</MenuItem>
+                    </Select>
+                </div>
+
+                <div>
+                    <strong>  <a href=" ">Federal Filing Status</a></strong>
+                    <Select>
+                        <MenuItem value="">Single</MenuItem>
+                        <MenuItem value="">Married</MenuItem>
+                        <MenuItem value="">Head of Household</MenuItem>
+                        <MenuItem value="">Married But Withhold at the Higher Single Rate</MenuItem>
+                    </Select>
+                </div>
+                <div>
+                    <strong>  <a href=" "># of Fedaral Allowances</a></strong>
+                    <TextField id="outlined-basic" label="" variant="outlined" />
+                </div>
+                <div>
+                    <strong>  <a href=" ">Additional Federal Withholding</a></strong>
+                   $ <TextField id="outlined-basic" label="" variant="outlined" />
+                </div>
+                <div>
+                    <strong>  <a href=" ">Round Federal Withholding</a></strong>
+                    <Radio
+
+                        value="Y"
+                        name="radio-button-demo"
+
+                    /> Yes
+                     <Radio
+                        value="Y"
+                        name="radio-button-demo"
+                    /> No
+                </div>
+                <div>
+                    <strong>  <a href=" ">I am exempt from</a></strong>
+                    <Checkbox name="" />Federal Tax
+                    <Checkbox name="" />Fica
+                    <Checkbox name="" />Medicare
+
+                    </div>
 
             </div>
         )
