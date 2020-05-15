@@ -25,7 +25,21 @@
   padding-bottom: 1rem;
   margin-top: 2rem;
 }
+.textfield {
+  width: "auto";
+  display: "flex";
+  height: 100px;
+}
 .outlined-basic {
   margin-right: 20px;
   width: 200px;
+}
+.gross {
+  text-align: left;
+}
+.gross1 {
+  text-align: left;
+}
+.gross_textfield {
+  margin-left: 70px;
 }
