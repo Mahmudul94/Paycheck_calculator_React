@@ -7,7 +7,17 @@
 
   position: relative;
   text-align: left;
+  padding-left: 10px;
+  display: block;
+  padding-left: 100px;
 }
+.gross {
+  margin-left: 10px;
+}
+.grosspay {
+  margin-right: 70px;
+}
+
 .general {
   background-color: black;
   color: white;
@@ -15,6 +25,7 @@
   padding-bottom: 1rem;
   margin-top: 2rem;
 }
-#outlined-basic {
+.outlined-basic {
   margin-right: 20px;
+  width: 200px;
 }

@@ -16,7 +16,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 export default class TopShelf extends Component {
     render() {
         return (
-            <div className="container">
+            <div >
                 <Container>
                     <h3>The Paycheck Calculator</h3>
                 </Container>
@@ -48,22 +48,24 @@ export default class TopShelf extends Component {
                         General Information
                 </Box>
                 </div>
-                <div className="gross">
-                    <strong>  <a href=" ">Gross Pay</a></strong>
+                <div >
+                    <strong className="grosspay">  <a href=" ">Gross Pay</a></strong>
 
                     <TextField id="outlined-basic" label="" variant="outlined" />
-                    <Select>
+
+                    <Select className="selectBox">
                         <MenuItem value="">Annualy</MenuItem>
                         <MenuItem >Pay Per Period</MenuItem>
                     </Select>
+
                 </div>
                 <div >
-                    <strong>  <a href=" ">Gross Salary YTD</a></strong>
+                    <strong className="grosspay">  <a href=" ">Gross Salary YTD</a></strong>
                     <TextField id="outlined-basic" label="" variant="outlined" />
                     (optional)
                 </div>
-                <div>
-                    <strong>  <a href=" ">Pay Frequency</a></strong>
+                <div >
+                    <strong className="grosspay">  <a href=" " id="pay">Pay Frequency</a></strong>
                     <Select>
                         <MenuItem value="">Daily</MenuItem>
                         <MenuItem >Weekly</MenuItem>
@@ -76,7 +78,7 @@ export default class TopShelf extends Component {
                     </Select>
                 </div>
 
-                <div>
+                <div className="gross">
                     <strong>  <a href=" ">Federal Filing Status</a></strong>
                     <Select>
                         <MenuItem value="">Single</MenuItem>
@@ -85,11 +87,11 @@ export default class TopShelf extends Component {
                         <MenuItem value="">Married But Withhold at the Higher Single Rate</MenuItem>
                     </Select>
                 </div>
-                <div>
+                <div className="gross">
                     <strong>  <a href=" "># of Fedaral Allowances</a></strong>
                     <TextField id="outlined-basic" label="" variant="outlined" />
                 </div>
-                <div>
+                <div className="gross">
                     <strong>  <a href=" ">Additional Federal Withholding</a></strong>
                    $ <TextField id="outlined-basic" label="" variant="outlined" />
                 </div>
@@ -161,7 +163,7 @@ export default class TopShelf extends Component {
                     <TextField id="outlined-basic" label="" variant="outlined" />
                 </div>
 
-            </div>
+            </div >
         )
     }
 }
