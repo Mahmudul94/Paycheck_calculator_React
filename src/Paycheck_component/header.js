@@ -111,8 +111,55 @@ export default class TopShelf extends Component {
                     <Checkbox name="" />Federal Tax
                     <Checkbox name="" />Fica
                     <Checkbox name="" />Medicare
+                </div>
+                <div className="general">
+                    <Box component="span" m={1} >
+                        State and Local Information for New York
+                </Box>
+                </div>
+                <div>
+                    <strong>  <a href=" "> Filing Status</a></strong>
+                    <Select>
+                        <MenuItem value="">Single</MenuItem>
+                        <MenuItem value="">Married</MenuItem>
+                        <MenuItem value="">Head of Household</MenuItem>
+                        <MenuItem value="">Married But Withhold at the Higher Single Rate</MenuItem>
+                    </Select>
+                </div>
+                <div>
+                    <strong>  <a href=" ">Allowances</a></strong>
+                    <TextField id="outlined-basic" label="" variant="outlined" />
+                </div>
+                <div>
+                    <strong>  <a href=" ">Additional State W/H</a></strong>
+                   $ <TextField id="outlined-basic" label="" variant="outlined" />
+                </div>
+                <div>
+                    <strong>  <a href=" ">NY SDI</a></strong>
+                    <Radio
 
-                    </div>
+                        value="Y"
+                        name="radio-button-demo"
+
+                    /> Yes
+                     <Radio
+                        value="Y"
+                        name="radio-button-demo"
+                    /> No
+                </div>
+                <div>
+                    <strong>  <a href=" "> City Tax</a></strong>
+                    <Select>
+                        <MenuItem value="">None</MenuItem>
+                        <MenuItem value=""></MenuItem>
+                        <MenuItem value=""></MenuItem>
+                        <MenuItem value=""></MenuItem>
+                    </Select>
+                </div>
+                <div>
+                    <strong>  <a href=" ">NYC Allowances</a></strong>
+                    <TextField id="outlined-basic" label="" variant="outlined" />
+                </div>
 
             </div>
         )
