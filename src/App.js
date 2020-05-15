@@ -1,14 +1,9 @@
-import React from 'react';
-import TopShelf from './Paycheck_component/header'
-import './App.css';
+import React from "react";
+import TopShelf from "./Paycheck_component/header";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-     
-     <TopShelf/>
-    </div>
-  );
+  return <TopShelf />;
 }
 
 export default App;
